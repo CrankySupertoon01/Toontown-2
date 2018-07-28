@@ -1,0 +1,130 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1D0437B0>}
+__handleAvatarChooserDone: 100000015, 'Cranky Supertoon', ('bls', 'md', 'm', 'f', (0.78, 0.23, 0.75, 1.0), (1.0, 1.0, 1.0, 1.0), (0.78, 0.23, 0.75, 1.0), (0.78, 0.23, 0.75, 1.0), 7, 6, 7, 6, 4, 6), 4
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_6/dna/storage_DD.pdna
+Reading DNA file... phase_6/dna/storage_DD_sz.pdna
+Reading DNA file... phase_6/dna/donalds_dock_sz.pdna
+Traceback (most recent call last):
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1162, in handleMessageType
+    self.handleDisable(di, ownerView=True)
+  File "otp\distributed\OTPClientRepository.py", line 1392, in handleDisable
+    self.lostConnection()
+  File "otp\distributed\OTPClientRepository.py", line 1103, in lostConnection
+    self.loginFSM.request('noConnection')
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 230, in __transition
+    self.__exitCurrent(exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 188, in __exitCurrent
+    self.__currentState.exit(argList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\State.py", line 213, in exit
+    apply(self.__exitFunc, argList)
+  File "toontown\distributed\ToontownClientRepository.py", line 425, in exitPlayingGame
+    base.localAvatar.deleteOrDelay()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DistributedObject.py", line 199, in deleteOrDelay
+    self.disableAnnounceAndDelete()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DistributedObject.py", line 202, in disableAnnounceAndDelete
+    self.disableAndAnnounce()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DistributedObject.py", line 228, in disableAndAnnounce
+    self.disable()
+  File "toontown\toon\LocalToon.py", line 252, in disable
+    DistributedToon.DistributedToon.disable(self)
+  File "toontown\toon\DistributedToon.py", line 185, in disable
+    self.stopAnimations()
+  File "toontown\toon\Toon.py", line 508, in stopAnimations
+    self.animFSM.request('off')
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 230, in __transition
+    self.__exitCurrent(exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 188, in __exitCurrent
+    self.__currentState.exit(argList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\State.py", line 213, in exit
+    apply(self.__exitFunc, argList)
+  File "toontown\toon\Toon.py", line 1632, in exitSwim
+    self.book.obscureButton(False)
+AttributeError: 'LocalToon' object has no attribute 'book'
+Traceback (most recent call last):
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\ShowBase.py", line 1682, in updateManagers
+    dt = globalClock.getDt()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1162, in handleMessageType
+    self.handleDisable(di, ownerView=True)
+  File "otp\distributed\OTPClientRepository.py", line 1392, in handleDisable
+    self.lostConnection()
+  File "otp\distributed\OTPClientRepository.py", line 1103, in lostConnection
+    self.loginFSM.request('noConnection')
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 230, in __transition
+    self.__exitCurrent(exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 188, in __exitCurrent
+    self.__currentState.exit(argList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\State.py", line 213, in exit
+    apply(self.__exitFunc, argList)
+  File "toontown\distributed\ToontownClientRepository.py", line 425, in exitPlayingGame
+    base.localAvatar.deleteOrDelay()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DistributedObject.py", line 199, in deleteOrDelay
+    self.disableAnnounceAndDelete()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DistributedObject.py", line 202, in disableAnnounceAndDelete
+    self.disableAndAnnounce()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DistributedObject.py", line 228, in disableAndAnnounce
+    self.disable()
+  File "toontown\toon\LocalToon.py", line 252, in disable
+    DistributedToon.DistributedToon.disable(self)
+  File "toontown\toon\DistributedToon.py", line 185, in disable
+    self.stopAnimations()
+  File "toontown\toon\Toon.py", line 508, in stopAnimations
+    self.animFSM.request('off')
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 230, in __transition
+    self.__exitCurrent(exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 188, in __exitCurrent
+    self.__currentState.exit(argList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\State.py", line 213, in exit
+    apply(self.__exitFunc, argList)
+  File "toontown\toon\Toon.py", line 1632, in exitSwim
+    self.book.obscureButton(False)
+AttributeError: 'LocalToon' object has no attribute 'book'
+Traceback (most recent call last):
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\toontown\toonbase\ToontownStart.py", line 198, in <module>
+    base.run()
+  File "otp\otpbase\OTPBase.py", line 48, in run
+    self.destroy()
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\ShowBase.py", line 514, in destroy
+    self.loader.destroy()
+  File "toontown\toonbase\ToontownLoader.py", line 18, in destroy
+    self.loadingScreen.destroy()
+  File "toontown\toontowngui\ToontownLoadingScreen.py", line 71, in destroy
+    self.toon.delete()
+  File "toontown\toon\Toon.py", line 559, in delete
+    Avatar.Avatar.delete(self)
+  File "otp\avatar\Avatar.py", line 82, in delete
+    self.nametag.destroy()
+  File "otp\nametag\NametagGroup.py", line 58, in destroy
+    taskMgr.remove(self.tickTask)
+NameError: global name 'taskMgr' is not defined

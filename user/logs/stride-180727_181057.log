@@ -1,0 +1,17 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Traceback (most recent call last):
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\python\lib\runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\dependencies\panda\Panda3D-1.10.0-x64\python\lib\runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2.0\toontown\toonbase\ToontownStart.py", line 125, in <module>
+    import ToonBase
+  File "toontown\toonbase\ToonBase.py", line 20, in <module>
+    import ToontownLoader
+  File "toontown\toonbase\ToontownLoader.py", line 4, in <module>
+    from toontown.toontowngui import ToontownLoadingScreen
+  File "toontown\toontowngui\ToontownLoadingScreen.py", line 88
+    if gui:
+     ^
+IndentationError: expected an indented block
