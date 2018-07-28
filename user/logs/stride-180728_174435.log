@@ -1,0 +1,112 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+{401000001: <toontown.distributed.ToontownDistrict.ToontownDistrict instance at 0x1900A7B0>}
+__handleAvatarChooserDone: 100000015, 'Cranky Supertoon', ('bls', 'md', 'm', 'f', (0.78, 0.23, 0.75, 1.0), (1.0, 1.0, 1.0, 1.0), (0.78, 0.23, 0.75, 1.0), (0.78, 0.23, 0.75, 1.0), 7, 6, 7, 6, 4, 6), 4
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage.pdna
+Reading DNA file... phase_3.5/dna/storage_interior.pdna
+Reading DNA file... phase_4/dna/storage_TT.pdna
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_5/dna/storage_TT_town.pdna
+Reading DNA file... phase_5/dna/toontown_central_2200.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_5/dna/storage_TT_town.pdna
+Reading DNA file... phase_5/dna/toontown_central_2300.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_5/dna/storage_TT_town.pdna
+Reading DNA file... phase_5/dna/toontown_central_2400.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_4/dna/storage_TT_sz.pdna
+Reading DNA file... phase_4/dna/toontown_central_sz.pdna
+entered wait for zone redirect
+entered wait for set zone response - 2
+Reading DNA file... phase_5/dna/storage_town.pdna
+Reading DNA file... phase_5/dna/storage_TT_town.pdna
+Reading DNA file... phase_5/dna/toontown_central_2100.pdna
+Traceback (most recent call last):
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\ConnectionRepository.py", line 613, in readerPollUntilEmpty
+    while self.readerPollOnce():
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\ConnectionRepository.py", line 620, in readerPollOnce
+    self.handleDatagram(self.private__di)
+  File "otp\distributed\OTPClientRepository.py", line 1224, in handleDatagram
+    self.handler(msgType, di)
+  File "toontown\hood\QuietZoneState.py", line 153, in handleWaitForQuietZoneResponse
+    base.cr.handlePlayGame(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1026, in handlePlayGame
+    self.handleMessageType(msgType, di)
+  File "otp\distributed\OTPClientRepository.py", line 1164, in handleMessageType
+    self.gotInterestDoneMessage(di)
+  File "otp\distributed\OTPClientRepository.py", line 1190, in gotInterestDoneMessage
+    self.handleInterestDoneMessage(di)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\distributed\DoInterestManager.py", line 618, in handleInterestDoneMessage
+    messenger.send(event)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\distributed\ToontownClientRepository.py", line 835, in _handleEmuSetZoneDone
+    messenger.send(event)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\hood\QuietZoneState.py", line 196, in _handleQuietZoneComplete
+    self.fsm.request('waitForZoneRedirect')
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 231, in __transition
+    self.__enter(aState, enterArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 217, in __enter
+    aState.enter(argList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\State.py", line 202, in enter
+    apply(self.__enterFunc, argList)
+  File "toontown\hood\QuietZoneState.py", line 216, in enterWaitForZoneRedirect
+    self.fsm.request('waitForSetZoneResponse')
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 284, in request
+    exitArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 231, in __transition
+    self.__enter(aState, enterArgList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\ClassicFSM.py", line 217, in __enter
+    aState.enter(argList)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\fsm\State.py", line 202, in enter
+    apply(self.__enterFunc, argList)
+  File "toontown\hood\QuietZoneState.py", line 236, in enterWaitForSetZoneResponse
+    messenger.send(self.getEnterWaitForSetZoneResponseMsg(), [self._requestStatus])
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\Messenger.py", line 326, in send
+    self.__dispatch(acceptorDict, event, sentArgs, foundWatch)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\dependencies\panda\Panda3D-1.10.0-x64\direct\showbase\Messenger.py", line 411, in __dispatch
+    method (*(extraArgs + sentArgs))
+  File "toontown\hood\Hood.py", line 171, in handleWaitForSetZoneResponse
+    self.loadLoader(requestStatus)
+  File "toontown\hood\ToonHood.py", line 80, in loadLoader
+    self.loader.load(requestStatus['zoneId'])
+  File "toontown\town\TTTownLoader.py", line 18, in load
+    self.createHood(dnaFile)
+  File "toontown\town\TownLoader.py", line 190, in createHood
+    node = loader.loadDNAFile(self.hood.dnaStore, dnaFile)
+  File "toontown\toonbase\ToontownLoader.py", line 23, in loadDNAFile
+    return loadDNAFile(dnastore, filename)
+  File "toontown\dna\DNAParser.py", line 27, in loadDNAFile
+    if node.node().getNumChildren() > 0:
+AssertionError: !is_empty() at line 694 of panda/src/pgraph/nodePath.cxx
