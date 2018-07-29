@@ -1,0 +1,13 @@
+TTLocalizer: Running in language: English
+OTPLocalizer: Running in language: English
+Preloading suits...
+Preloading Toon heads...
+Preloading avatars...
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    import toontown.toonbase.ToontownStart
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\toontown\toonbase\ToontownStart.py", line 181, in <module>
+    base.startShow(cr)
+  File "C:\Users\Adam\Documents\GitHub\Toontown-2\toontown\toonbase\ToonBase.py", line 327, in startShow
+    for name in launcher.getGameServer().split(';'):
+AttributeError: 'NoneType' object has no attribute 'split'
