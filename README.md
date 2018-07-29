@@ -6,7 +6,7 @@
 This game is inspired by the Panda3D game called Toontown made by Disney Interactive. We are planning to revivie, it but unlike any other server we accept pull requests to get stuff done faster
 
 ## 🚀 Getting Started
-Below you will find anything you need to know about the game. If you want to download a buikd you can do it from the releases tab.
+Below you will find anything you need to know about the game. If you want to download a build you can do it from the releases tab.
 
 ## 🎨 Features
 
